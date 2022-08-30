@@ -9,5 +9,8 @@ const btnShowModal = document.querySelectorAll('.show-modal'); //Selects all the
 console.log(btnShowModal); //it selects only the first one.
 
 for (let i = 0; i < btnShowModal.length; i++) {
-  console.log(btnShowModal[i].textContent); //comsole.logs all the elements' content in the array of as provided by the queryselectorall
+  // console.log(btnShowModal[i].textContent); //comsole.logs all the elements' content in the array of as provided by the queryselectorall
+  btnShowModal[i].addEventListener('click', function () {
+    console.log('Button Clicked');
+  });
 }
