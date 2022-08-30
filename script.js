@@ -38,5 +38,5 @@ overlay.addEventListener('click', closeModal);
 //ADD KEYBOARD EVENT for closing modal with ESC BUTTON
 document.addEventListener('keydown', function (e) {
   console.log(`A key is pressed`);
-  console.log(e); // reports the keyboardevent nodelist which reports the pressed key!
+  console.log(e); // reports the keyboardevent object which reports the pressed key field!
 });
