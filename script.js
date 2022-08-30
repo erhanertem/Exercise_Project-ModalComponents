@@ -39,6 +39,7 @@ overlay.addEventListener('click', closeModal);
 document.addEventListener('keydown', function (e) {
   console.log(`A key is pressed`);
   console.log(e); // reports the keyboardevent object which reports the pressed key field!
+  console.log(`${e.key} pressed`);
   // when esc pressed, keyboardevent object reports ket field to be "Escape"
   // so if key field in the event is "Escape" and the modal classlist do not bear "hidden" run the closeModal() function
   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
